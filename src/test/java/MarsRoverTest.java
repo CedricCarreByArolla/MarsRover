@@ -1,3 +1,4 @@
+import fr.chaplinb.MarsRover;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,7 +10,7 @@ public class MarsRoverTest {
         int x = 0;
         int y = 0;
         String orientation = "N";
-        MarsRover marsRover = new MarsRover(x, y, orientation);
+        MarsRover rover = new MarsRover(x, y, orientation);
         //Act
         rover.executeCommands("M");
         //Assert
