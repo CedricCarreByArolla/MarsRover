@@ -12,6 +12,7 @@ public class MarsRoverTest {
     @CsvSource({
             "M,0 1 N",
             "MM,0 2 N",
+            "MMM,0 3 N",
     })
     void given_starting_of_0_0_and_heading_North_should_move_forward(String commands, String finalPosition) {
         //Arrange
