@@ -14,13 +14,8 @@ public class MarsRover {
     }
 
     public void executeCommands(String commands) {
-        if (Objects.equals(commands, "MM")) {
-            setY(2);
-        } else if (Objects.equals(commands, "MMM")) {
-            setY(3);
-        } else {
-            setY(1);
-        }
+        int nbOfMoveCommand = commands.length();
+        setY(nbOfMoveCommand);
     }
 
     public String getPosition() {
