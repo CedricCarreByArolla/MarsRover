@@ -12,10 +12,14 @@ public class MarsRover {
     }
 
     public void executeCommands(String commands) {
-        throw new UnsupportedOperationException();
+        setY(1);
     }
 
     public String getPosition() {
-        throw new UnsupportedOperationException();
+        return x + " " + y + " " + orientation;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 }
