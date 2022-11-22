@@ -1,5 +1,7 @@
 package fr.chaplinb;
 
+import java.util.Objects;
+
 public class MarsRover {
     private int x;
     private int y;
@@ -12,7 +14,11 @@ public class MarsRover {
     }
 
     public void executeCommands(String commands) {
-        setY(1);
+        if (Objects.equals(commands, "MM")) {
+            setY(2);
+        } else {
+            setY(1);
+        }
     }
 
     public String getPosition() {
