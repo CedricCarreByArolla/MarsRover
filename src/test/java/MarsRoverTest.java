@@ -81,6 +81,7 @@ class MarsRoverTest {
     @CsvSource({
             "R,0 0 E",
             "RR,0 0 S",
+            "RRR,0 0 W",
     })
     void given_starting_of_0_0_and_heading_North_should_turn_right(String commands, String finalPosition) {
         //Arrange
