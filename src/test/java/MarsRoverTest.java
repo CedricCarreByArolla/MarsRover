@@ -1,12 +1,10 @@
 import fr.chaplinb.MarsRover;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MarsRoverTest {
-
+class MarsRoverTest {
 
     @ParameterizedTest(name = "to position {1} when it receive commands {0} ")
     @CsvSource({
@@ -18,11 +16,10 @@ public class MarsRoverTest {
         //Arrange
         int x = 0;
         int y = 0;
-        String orientation = "N";
-        MarsRover rover = new MarsRover(x, y, orientation);
+        MarsRover northFacingRover = new MarsRover(x, y, "N");
         //Act
-        rover.executeCommands(commands);
+        northFacingRover.executeCommands(commands);
         //Assert
-        assertThat(rover.getPosition()).isEqualTo(finalPosition);
+        assertThat(northFacingRover.getPosition()).isEqualTo(finalPosition);
     }
 }
