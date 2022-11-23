@@ -14,12 +14,10 @@ public class MarsRover {
     }
 
     public void executeCommands(String commands) {
-        if (Objects.equals(commands, "MM")) {
-            setY(2);
-        } else if (Objects.equals(commands, "MMM")) {
-            setY(3);
-        } else {
-            setY(1);
+        for (char command : commands.toCharArray()) {
+            if (orientation == "N") {
+                this.y += 1;
+            }
         }
     }
 
