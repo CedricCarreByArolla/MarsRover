@@ -76,4 +76,19 @@ class MarsRoverTest {
         //Assert
         assertThat(estFacingRover.getPosition()).isEqualTo(finalPosition);
     }
+
+    @ParameterizedTest(name = "to position {1} when it receive commands {0} ")
+    @CsvSource({
+            "R,0 0 E",
+    })
+    void given_starting_of_0_0_and_heading_North_should_turn_right(String commands, String finalPosition) {
+        //Arrange
+        int x = 0;
+        int y = 0;
+        MarsRover estFacingRover = new MarsRover(x, y, 'N');
+        //Act
+        estFacingRover.executeCommands(commands);
+        //Assert
+        assertThat(estFacingRover.getPosition()).isEqualTo(finalPosition);
+    }
 }
