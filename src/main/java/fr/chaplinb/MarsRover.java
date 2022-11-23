@@ -13,18 +13,13 @@ public class MarsRover {
 
     public void executeCommands(String commands) {
         for (char command : commands.toCharArray()) {
-            if (orientation == "N") {
-                this.y += 1;
+            if (command == 'M') {
+                if (orientation == "N") this.y += 1;
+                if (orientation == "E") this.x += 1;
+                if (orientation == "S") this.y -= 1;
+                if (orientation == "W") this.x -= 1;
             }
-            if (orientation == "E") {
-                this.x += 1;
-            }
-            if (orientation == "S") {
-                this.y -= 1;
-            }
-            if (orientation == "W") {
-                this.x -= 1;
-            }
+
         }
     }
 
