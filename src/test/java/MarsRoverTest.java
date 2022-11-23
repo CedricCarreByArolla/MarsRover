@@ -83,6 +83,7 @@ class MarsRoverTest {
             "RR,0 0 S",
             "RRR,0 0 W",
             "RRRR,0 0 N",
+            "RRRRR,0 0 E",
     })
     void given_starting_of_0_0_and_heading_North_should_turn_right(String commands, String finalPosition) {
         //Arrange
