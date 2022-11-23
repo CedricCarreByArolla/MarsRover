@@ -17,14 +17,18 @@ public class MarsRover {
                 moveForward();
             }
             if (command == 'R') {
-                switch (orientation) {
-                    case 'N' -> orientation = 'E';
-                    case 'E' -> orientation = 'S';
-                    case 'S' -> orientation = 'W';
-                    case 'W' -> orientation = 'N';
-                }
+                spinLeft();
             }
 
+        }
+    }
+
+    private void spinLeft() {
+        switch (orientation) {
+            case 'N' -> orientation = 'E';
+            case 'E' -> orientation = 'S';
+            case 'S' -> orientation = 'W';
+            case 'W' -> orientation = 'N';
         }
     }
 
