@@ -1,7 +1,5 @@
 package fr.chaplinb;
 
-import java.util.Objects;
-
 public class MarsRover {
     private int x;
     private int y;
@@ -17,6 +15,9 @@ public class MarsRover {
         for (char command : commands.toCharArray()) {
             if (orientation == "N") {
                 this.y += 1;
+            }
+            if (orientation == "E") {
+                this.x += 1;
             }
         }
     }
