@@ -43,10 +43,10 @@ class MarsRoverTest {
 
     @ParameterizedTest(name = "to position {1} when it receive commands {0} ")
     @CsvSource({
-            "M,0 4 S",
-            "MM,0 3 S",
-            "MMM,0 2 S",
-            "MMMM,0 1 S",
+            "M,5 4 S",
+            "MM,5 3 S",
+            "MMM,5 2 S",
+            "MMMM,5 1 S",
     })
     void given_starting_of_5_5_and_heading_South_should_move_forward(String commands, String finalPosition) {
         //Arrange

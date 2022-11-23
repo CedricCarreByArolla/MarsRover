@@ -19,6 +19,9 @@ public class MarsRover {
             if (orientation == "E") {
                 this.x += 1;
             }
+            if (orientation == "S") {
+                this.y -= 1;
+            }
         }
     }
 
