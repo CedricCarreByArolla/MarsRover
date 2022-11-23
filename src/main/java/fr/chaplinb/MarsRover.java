@@ -16,6 +16,11 @@ public class MarsRover {
             if (command == 'M') {
                 moveForward();
             }
+            if (command == 'R') {
+                if (orientation == 'N') {
+                    orientation = 'E';
+                }
+            }
 
         }
     }
