@@ -16,7 +16,7 @@ class MarsRoverTest {
         //Arrange
         int x = 0;
         int y = 0;
-        MarsRover northFacingRover = new MarsRover(x, y, "N");
+        MarsRover northFacingRover = new MarsRover(x, y, 'N');
         //Act
         northFacingRover.executeCommands(commands);
         //Assert
@@ -34,7 +34,7 @@ class MarsRoverTest {
         //Arrange
         int x = 0;
         int y = 0;
-        MarsRover estFacingRover = new MarsRover(x, y, "E");
+        MarsRover estFacingRover = new MarsRover(x, y, 'E');
         //Act
         estFacingRover.executeCommands(commands);
         //Assert
@@ -52,7 +52,7 @@ class MarsRoverTest {
         //Arrange
         int x = 5;
         int y = 5;
-        MarsRover estFacingRover = new MarsRover(x, y, "S");
+        MarsRover estFacingRover = new MarsRover(x, y, 'S');
         //Act
         estFacingRover.executeCommands(commands);
         //Assert
@@ -70,7 +70,7 @@ class MarsRoverTest {
         //Arrange
         int x = 5;
         int y = 5;
-        MarsRover estFacingRover = new MarsRover(x, y, "W");
+        MarsRover estFacingRover = new MarsRover(x, y, 'W');
         //Act
         estFacingRover.executeCommands(commands);
         //Assert
